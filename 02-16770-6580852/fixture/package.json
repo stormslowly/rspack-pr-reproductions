@@ -1,0 +1,6 @@
+{
+  "browser": {
+    "transport": "./browser.js",
+    "./src/transport.js": false
+  }
+}

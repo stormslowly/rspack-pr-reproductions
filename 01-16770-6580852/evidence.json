@@ -1,0 +1,49 @@
+{
+  "environment": {
+    "os": "Linux",
+    "arch": "x86_64",
+    "node": "v22.16.0",
+    "rspackJs": "2.3.4-canary-8e506f27-20261120172223",
+    "webpack": "5.112.2",
+    "enhancedResolve": "5.27.0"
+  },
+  "commits": {
+    "base": "8e506f27445c4638dec89a721a87b1bae9af1a44",
+    "reviewedHead": "6580852d325c1a2f2681c781da6bd2ce3dad982a",
+    "ciMerge": "328d8744bc9a74c22b8b3cda3db1e3b76e410d0f",
+    "ciMergeParents": [
+      "8e506f27445c4638dec89a721a87b1bae9af1a44",
+      "6580852d325c1a2f2681c781da6bd2ce3dad982a"
+    ]
+  },
+  "ci": {
+    "base": {
+      "run": 44714715207,
+      "binarySha256": "fc5e1aea5784c9d96b5577f4fdbcb2a45bda243bbca2ba4787b592444fc714df"
+    },
+    "head": {
+      "run": 44801695822,
+      "binarySha256": "5f3c1084da9ff45a715dada4eed9b716700bb46593f7bbe7917a8c0c8ac29fd2"
+    }
+  },
+  "results": {
+    "base": {
+      "resolved": "browser.js",
+      "bundled": "browser transport",
+      "directIgnored": false,
+      "directBrowser": "browser.js"
+    },
+    "head": {
+      "resolved": false,
+      "bundled": {},
+      "directIgnored": false,
+      "directBrowser": "browser.js"
+    },
+    "webpack": {
+      "resolved": "browser.js",
+      "bundled": "browser transport",
+      "directIgnored": false,
+      "directBrowser": "browser.js"
+    }
+  }
+}
