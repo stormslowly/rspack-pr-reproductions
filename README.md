@@ -14,6 +14,12 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [07-16803-8103c48](07-16803-8103c48/CLAUDE_REPRO_STEPS.md) | [#16803](https://github.com/web-infra-dev/rspack/pull/16803) | `8103c48` | Downgrading a child silently breaks its retained recursive ancestor. |
 | [08-16803-8103c48](08-16803-8103c48/CLAUDE_REPRO_STEPS.md) | [#16803](https://github.com/web-infra-dev/rspack/pull/16803) | `8103c48` | A downgrade drops concurrent writes and loses a working watch on reattachment failure. |
 | [09-16803-8103c48](09-16803-8103c48/CLAUDE_REPRO_STEPS.md) | [#16803](https://github.com/web-infra-dev/rspack/pull/16803) | `8103c48` | Bulk mode downgrades of disjoint directories take quadratic time on Linux. |
+| [10-16804-50e590b](10-16804-50e590b/CLAUDE_REPRO_STEPS.md) | [#16804](https://github.com/web-infra-dev/rspack/pull/16804) | `50e590b` | The macOS context watch narrows to its only child and misses new siblings. |
+| [11-16804-50e590b](11-16804-50e590b/CLAUDE_REPRO_STEPS.md) | [#16804](https://github.com/web-infra-dev/rspack/pull/16804) | `50e590b` | Creating an entry inside a missing dependency that became a directory produces no event. |
+| [12-16804-50e590b](12-16804-50e590b/CLAUDE_REPRO_STEPS.md) | [#16804](https://github.com/web-infra-dev/rspack/pull/16804) | `50e590b` | Moving a file with an aged mtime into nested contexts invalidates only one subscriber. |
+| [13-16804-50e590b](13-16804-50e590b/CLAUDE_REPRO_STEPS.md) | [#16804](https://github.com/web-infra-dev/rspack/pull/16804) | `50e590b` | The outer context consumes the inner context's recovery before event delivery. |
+| [14-16804-50e590b](14-16804-50e590b/CLAUDE_REPRO_STEPS.md) | [#16804](https://github.com/web-infra-dev/rspack/pull/16804) | `50e590b` | A watch update during the JavaScript ignored predicate delivers a revoked file. |
+| [15-16804-50e590b](15-16804-50e590b/CLAUDE_REPRO_STEPS.md) | [#16804](https://github.com/web-infra-dev/rspack/pull/16804) | `50e590b` | Removing a directory subtree repeatedly compacts the same owner's subscription list. |
 
 The two #16770 cases support checking saved evidence with Node.js 22 or newer.
 
