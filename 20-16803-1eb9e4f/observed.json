@@ -1,0 +1,26 @@
+{
+  "first": {
+    "base": {
+      "created": 8,
+      "liveObjects": 0,
+      "remaining": 0
+    },
+    "head": {
+      "created": 8,
+      "liveObjects": 0,
+      "remaining": 8
+    }
+  },
+  "second": {
+    "base": {
+      "created": 8,
+      "liveObjects": 0,
+      "remaining": 0
+    },
+    "head": {
+      "created": 8,
+      "liveObjects": 0,
+      "remaining": 8
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "first": [
+    {
+      "scenario": "permission",
+      "base": {
+        "errorsDuringRetry": [],
+        "goodAfterRetry": true,
+        "rootAfterRecovery": true,
+        "goodAfterRecovery": true,
+        "fileEvent": true,
+        "contextEvent": true,
+        "controlEvent": true,
+        "errors": []
+      },
+      "head": {
+        "errorsDuringRetry": [
+          "Watcher error: Permission denied (os error 13) about [\"<fixture>/src/incoming\"]"
+        ],
+        "goodAfterRetry": false,
+        "rootAfterRecovery": false,
+        "goodAfterRecovery": false,
+        "fileEvent": false,
+        "contextEvent": false,
+        "controlEvent": true,
+        "errors": [
+          "Watcher error: Permission denied (os error 13) about [\"<fixture>/src/incoming\"]"
+        ]
+      }
+    },
+    {
+      "scenario": "quota",
+      "base": {
+        "errorsDuringRetry": [],
+        "goodAfterRetry": true,
+        "rootAfterRecovery": true,
+        "goodAfterRecovery": true,
+        "fileEvent": true,
+        "contextEvent": true,
+        "controlEvent": true,
+        "errors": []
+      },
+      "head": {
+        "errorsDuringRetry": [
+          "Watcher error: OS file watch limit reached. about [\"<fixture>/src/incoming\"]"
+        ],
+        "goodAfterRetry": false,
+        "rootAfterRecovery": false,
+        "goodAfterRecovery": false,
+        "fileEvent": false,
+        "contextEvent": false,
+        "controlEvent": true,
+        "errors": [
+          "Watcher error: OS file watch limit reached. about [\"<fixture>/src/incoming\"]"
+        ]
+      }
+    }
+  ],
+  "second": [
+    {
+      "scenario": "permission",
+      "base": {
+        "errorsDuringRetry": [],
+        "goodAfterRetry": true,
+        "rootAfterRecovery": true,
+        "goodAfterRecovery": true,
+        "fileEvent": true,
+        "contextEvent": true,
+        "controlEvent": true,
+        "errors": []
+      },
+      "head": {
+        "errorsDuringRetry": [
+          "Watcher error: Permission denied (os error 13) about [\"<fixture>/src/incoming\"]"
+        ],
+        "goodAfterRetry": false,
+        "rootAfterRecovery": false,
+        "goodAfterRecovery": false,
+        "fileEvent": false,
+        "contextEvent": false,
+        "controlEvent": true,
+        "errors": [
+          "Watcher error: Permission denied (os error 13) about [\"<fixture>/src/incoming\"]"
+        ]
+      }
+    },
+    {
+      "scenario": "quota",
+      "base": {
+        "errorsDuringRetry": [],
+        "goodAfterRetry": true,
+        "rootAfterRecovery": true,
+        "goodAfterRecovery": true,
+        "fileEvent": true,
+        "contextEvent": true,
+        "controlEvent": true,
+        "errors": []
+      },
+      "head": {
+        "errorsDuringRetry": [
+          "Watcher error: OS file watch limit reached. about [\"<fixture>/src/incoming\"]"
+        ],
+        "goodAfterRetry": false,
+        "rootAfterRecovery": false,
+        "goodAfterRecovery": false,
+        "fileEvent": false,
+        "contextEvent": false,
+        "controlEvent": true,
+        "errors": [
+          "Watcher error: OS file watch limit reached. about [\"<fixture>/src/incoming\"]"
+        ]
+      }
+    }
+  ]
+}

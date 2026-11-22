@@ -1,0 +1,86 @@
+{
+  "first": [
+    {
+      "variant": "recreate",
+      "base": {
+        "watchedAfterRename": true,
+        "watchedAfterRegistration": true,
+        "fileEvent": true,
+        "contextEvent": true,
+        "explicitFileEvent": true,
+        "controlEvent": true,
+        "errors": []
+      },
+      "head": {
+        "watchedAfterRename": false,
+        "watchedAfterRegistration": false,
+        "fileEvent": false,
+        "contextEvent": false,
+        "explicitFileEvent": false,
+        "controlEvent": true,
+        "errors": []
+      }
+    },
+    {
+      "variant": "atomic",
+      "base": {
+        "watchedAfterRename": true,
+        "watchedAfterRegistration": true,
+        "fileEvent": true,
+        "contextEvent": true,
+        "controlEvent": true,
+        "errors": []
+      },
+      "head": {
+        "watchedAfterRename": false,
+        "watchedAfterRegistration": false,
+        "fileEvent": false,
+        "contextEvent": false,
+        "controlEvent": true,
+        "errors": []
+      }
+    }
+  ],
+  "second": [
+    {
+      "variant": "recreate",
+      "base": {
+        "watchedAfterRename": true,
+        "watchedAfterRegistration": true,
+        "fileEvent": true,
+        "contextEvent": true,
+        "explicitFileEvent": true,
+        "controlEvent": true,
+        "errors": []
+      },
+      "head": {
+        "watchedAfterRename": false,
+        "watchedAfterRegistration": false,
+        "fileEvent": false,
+        "contextEvent": false,
+        "explicitFileEvent": false,
+        "controlEvent": true,
+        "errors": []
+      }
+    },
+    {
+      "variant": "atomic",
+      "base": {
+        "watchedAfterRename": true,
+        "watchedAfterRegistration": true,
+        "fileEvent": true,
+        "contextEvent": true,
+        "controlEvent": true,
+        "errors": []
+      },
+      "head": {
+        "watchedAfterRename": false,
+        "watchedAfterRegistration": false,
+        "fileEvent": false,
+        "contextEvent": false,
+        "controlEvent": true,
+        "errors": []
+      }
+    }
+  ]
+}

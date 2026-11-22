@@ -20,6 +20,11 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [13-16804-50e590b](13-16804-50e590b/CLAUDE_REPRO_STEPS.md) | [#16804](https://github.com/web-infra-dev/rspack/pull/16804) | `50e590b` | The outer context consumes the inner context's recovery before event delivery. |
 | [14-16804-50e590b](14-16804-50e590b/CLAUDE_REPRO_STEPS.md) | [#16804](https://github.com/web-infra-dev/rspack/pull/16804) | `50e590b` | A watch update during the JavaScript ignored predicate delivers a revoked file. |
 | [15-16804-50e590b](15-16804-50e590b/CLAUDE_REPRO_STEPS.md) | [#16804](https://github.com/web-infra-dev/rspack/pull/16804) | `50e590b` | Removing a directory subtree repeatedly compacts the same owner's subscription list. |
+| [16-16803-1eb9e4f](16-16803-1eb9e4f/CLAUDE_REPRO_STEPS.md) | [#16803](https://github.com/web-infra-dev/rspack/pull/16803) | `1eb9e4f` | Replacing a watched directory under the same name loses future edits. |
+| [17-16803-1eb9e4f](17-16803-1eb9e4f/CLAUDE_REPRO_STEPS.md) | [#16803](https://github.com/web-infra-dev/rspack/pull/16803) | `1eb9e4f` | Retrying a partially covered recursive root releases working watches after a permission or quota error. |
+| [18-16803-1eb9e4f](18-16803-1eb9e4f/CLAUDE_REPRO_STEPS.md) | [#16803](https://github.com/web-infra-dev/rspack/pull/16803) | `1eb9e4f` | Existing directory symlinks are skipped when following symlinks is enabled. |
+| [19-16803-1eb9e4f](19-16803-1eb9e4f/CLAUDE_REPRO_STEPS.md) | [#16803](https://github.com/web-infra-dev/rspack/pull/16803) | `1eb9e4f` | Installing and withdrawing a large recursive watch takes longer on Linux. |
+| [20-16803-1eb9e4f](20-16803-1eb9e4f/CLAUDE_REPRO_STEPS.md) | [#16803](https://github.com/web-infra-dev/rspack/pull/16803) | `1eb9e4f` | An unclosed native watcher retains its inotify instance after garbage collection. |
 
 The two #16770 cases support checking saved evidence with Node.js 22 or newer.
 

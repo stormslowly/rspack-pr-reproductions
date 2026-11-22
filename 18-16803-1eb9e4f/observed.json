@@ -1,0 +1,74 @@
+{
+  "first": [
+    {
+      "followSymlinks": false,
+      "base": {
+        "targetWatched": false,
+        "logicalFileEvent": false,
+        "contextEvent": false,
+        "controlEvent": true,
+        "errors": []
+      },
+      "head": {
+        "targetWatched": false,
+        "logicalFileEvent": false,
+        "contextEvent": false,
+        "controlEvent": true,
+        "errors": []
+      }
+    },
+    {
+      "followSymlinks": true,
+      "base": {
+        "targetWatched": true,
+        "logicalFileEvent": true,
+        "contextEvent": true,
+        "controlEvent": true,
+        "errors": []
+      },
+      "head": {
+        "targetWatched": false,
+        "logicalFileEvent": false,
+        "contextEvent": false,
+        "controlEvent": true,
+        "errors": []
+      }
+    }
+  ],
+  "second": [
+    {
+      "followSymlinks": false,
+      "base": {
+        "targetWatched": false,
+        "logicalFileEvent": false,
+        "contextEvent": false,
+        "controlEvent": true,
+        "errors": []
+      },
+      "head": {
+        "targetWatched": false,
+        "logicalFileEvent": false,
+        "contextEvent": false,
+        "controlEvent": true,
+        "errors": []
+      }
+    },
+    {
+      "followSymlinks": true,
+      "base": {
+        "targetWatched": true,
+        "logicalFileEvent": true,
+        "contextEvent": true,
+        "controlEvent": true,
+        "errors": []
+      },
+      "head": {
+        "targetWatched": false,
+        "logicalFileEvent": false,
+        "contextEvent": false,
+        "controlEvent": true,
+        "errors": []
+      }
+    }
+  ]
+}
