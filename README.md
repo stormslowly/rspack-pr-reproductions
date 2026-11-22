@@ -11,6 +11,9 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [04-16803-79f0b66](04-16803-79f0b66/CLAUDE_REPRO_STEPS.md) | [#16803](https://github.com/web-infra-dev/rspack/pull/16803) | `79f0b66` | A failed recursive upgrade loses a working file subscription. |
 | [05-16803-79f0b66](05-16803-79f0b66/CLAUDE_REPRO_STEPS.md) | [#16803](https://github.com/web-infra-dev/rspack/pull/16803) | `79f0b66` | Replacing a watch at the inotify quota fails on every retry. |
 | [06-16803-79f0b66](06-16803-79f0b66/CLAUDE_REPRO_STEPS.md) | [#16803](https://github.com/web-infra-dev/rspack/pull/16803) | `79f0b66` | Native re-registration time grows quadratically with the directory count. |
+| [07-16803-8103c48](07-16803-8103c48/CLAUDE_REPRO_STEPS.md) | [#16803](https://github.com/web-infra-dev/rspack/pull/16803) | `8103c48` | Downgrading a child silently breaks its retained recursive ancestor. |
+| [08-16803-8103c48](08-16803-8103c48/CLAUDE_REPRO_STEPS.md) | [#16803](https://github.com/web-infra-dev/rspack/pull/16803) | `8103c48` | A downgrade drops concurrent writes and loses a working watch on reattachment failure. |
+| [09-16803-8103c48](09-16803-8103c48/CLAUDE_REPRO_STEPS.md) | [#16803](https://github.com/web-infra-dev/rspack/pull/16803) | `8103c48` | Bulk mode downgrades of disjoint directories take quadratic time on Linux. |
 
 The two #16770 cases support checking saved evidence with Node.js 22 or newer.
 
@@ -27,7 +30,7 @@ node 02-16770-6580852/verify.mjs --live "$work/base/$file" "$work/head/$file"
 
 ## Repeating the native watcher comparisons
 
-Run on Linux x86-64 with glibc and Node.js 22. Case 04 requires an unprivileged user. Case 05 uses a private user namespace and util-linux `unshare`. All four cases execute the native CI bindings. From the repository root run the following commands.
+Run on Linux x86-64 with glibc and Node.js 22. Cases 04 and 08 use an unprivileged user. Case 05 uses a private user namespace and util-linux `unshare`. The following commands run cases 03–06 against the first reviewed revision from the repository root.
 
 ```sh
 gh run download 44908894098 -R web-infra-dev/rspack -n bindings-x86_64-unknown-linux-gnu -D base
@@ -36,4 +39,15 @@ node 03-16803-79f0b66/verify.mjs
 node 04-16803-79f0b66/verify.mjs
 node 05-16803-79f0b66/verify.mjs
 node 06-16803-79f0b66/verify.mjs
+```
+
+Cases 07–09 compare the same base with the later PR revision `8103c48`. Each case also has standalone setup instructions.
+
+```sh
+gh run download 45013328192 -R web-infra-dev/rspack -n bindings-x86_64-unknown-linux-gnu -D head-8103c48
+file=rspack.linux-x64-gnu.node
+node 07-16803-8103c48/verify.mjs "base/$file" "head-8103c48/$file"
+node 08-16803-8103c48/verify.mjs "base/$file" "head-8103c48/$file"
+node 08-16803-8103c48/concurrent-edits.mjs "base/$file" "head-8103c48/$file"
+node 09-16803-8103c48/verify.mjs "base/$file" "head-8103c48/$file"
 ```
