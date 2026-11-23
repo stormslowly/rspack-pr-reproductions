@@ -29,6 +29,7 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [22-16812-addcfcc](22-16812-addcfcc/CLAUDE_REPRO_STEPS.md) | [#16812](https://github.com/web-infra-dev/rspack/pull/16812) | `addcfcc` | Registering one file below the macOS /tmp symlink subscribes to unrelated events across the volume. |
 | [23-16812-addcfcc](23-16812-addcfcc/CLAUDE_REPRO_STEPS.md) | [#16812](https://github.com/web-infra-dev/rspack/pull/16812) | `addcfcc` | Empty native watch updates on macOS repeatedly walk the ancestors of every retained dependency. |
 | [24-16837-a636fd5](24-16837-a636fd5/CLAUDE_REPRO_STEPS.md) | [#16837](https://github.com/web-infra-dev/rspack/pull/16837) | `a636fd5` | A real file creation on Linux can reset its directory's safe time to zero when a missing dependency uses an extra separator. |
+| [25-16837-a636fd5](25-16837-a636fd5/CLAUDE_REPRO_STEPS.md) | [#16837](https://github.com/web-infra-dev/rspack/pull/16837) | `a636fd5` | A rebuild can omit existing directories from `compiler.contextTimestamps` while their nested watches are being registered. |
 
 The two #16770 cases support checking saved evidence with Node.js 22 or newer.
 
