@@ -25,6 +25,9 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [18-16803-1eb9e4f](18-16803-1eb9e4f/CLAUDE_REPRO_STEPS.md) | [#16803](https://github.com/web-infra-dev/rspack/pull/16803) | `1eb9e4f` | Existing directory symlinks are skipped when following symlinks is enabled. |
 | [19-16803-1eb9e4f](19-16803-1eb9e4f/CLAUDE_REPRO_STEPS.md) | [#16803](https://github.com/web-infra-dev/rspack/pull/16803) | `1eb9e4f` | Installing and withdrawing a large recursive watch takes longer on Linux. |
 | [20-16803-1eb9e4f](20-16803-1eb9e4f/CLAUDE_REPRO_STEPS.md) | [#16803](https://github.com/web-infra-dev/rspack/pull/16803) | `1eb9e4f` | An unclosed native watcher retains its inotify instance after garbage collection. |
+| [21-16812-addcfcc](21-16812-addcfcc/CLAUDE_REPRO_STEPS.md) | [#16812](https://github.com/web-infra-dev/rspack/pull/16812) | `addcfcc` | Removing a file alias also releases the independent watch on its real path when the alias was registered first. |
+| [22-16812-addcfcc](22-16812-addcfcc/CLAUDE_REPRO_STEPS.md) | [#16812](https://github.com/web-infra-dev/rspack/pull/16812) | `addcfcc` | Registering one file below the macOS /tmp symlink subscribes to unrelated events across the volume. |
+| [23-16812-addcfcc](23-16812-addcfcc/CLAUDE_REPRO_STEPS.md) | [#16812](https://github.com/web-infra-dev/rspack/pull/16812) | `addcfcc` | Empty native watch updates on macOS repeatedly walk the ancestors of every retained dependency. |
 
 The two #16770 cases support checking saved evidence with Node.js 22 or newer.
 
