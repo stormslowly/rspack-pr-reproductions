@@ -38,3 +38,14 @@ All five reruns produced 0 further predicate calls on the merge base and 8,191 o
 gh run download 45623309153 -R web-infra-dev/rspack -n bindings-x86_64-unknown-linux-gnu -D head-000ba94
 node verify.mjs base/rspack.linux-x64-gnu.node head-000ba94/rspack.linux-x64-gnu.node
 ```
+
+## Recheck on `f5cd1d2`
+
+Five comparisons again counted 0 further predicate calls on the merge base and 8,191 on the PR. The median delay for the independently watched file was 5 ms (range 5–6 ms) on the merge base and 142 ms (range 138–145 ms) on the PR. The first PR commit `75cd589` already produced 8,191 extra calls. The main commit used by the current PR build produced 0. [First PR build](https://github.com/web-infra-dev/rspack/actions/runs/45340563950/job/138263110271) · [Current scan loop](https://github.com/web-infra-dev/rspack/blob/f5cd1d2ff1ae0d6ba8b8093f3a08d10bb59b9826/crates/rspack_watcher/src/paths.rs#L798-L819)
+
+The reviewed head was `f5cd1d2ff1ae0d6ba8b8093f3a08d10bb59b9826`. CI built `0114306f1e8419d80cd61301f6e4910d23eef10b` with first parent `f9a8ef34466814e5eae706892701f6c933bd4fe0` and the reviewed head as its second parent. The Linux binding SHA-256 was `10a08c61da50462a85a78df20e98bf3cdeea6e957cf423450824c761f9143393`. [PR binding](https://github.com/web-infra-dev/rspack/actions/runs/45666007535/job/139388537232)
+
+```sh
+gh run download 45666007535 -R web-infra-dev/rspack -n bindings-x86_64-unknown-linux-gnu -D head-f5cd1d2
+node verify.mjs base/rspack.linux-x64-gnu.node head-f5cd1d2/rspack.linux-x64-gnu.node
+```
