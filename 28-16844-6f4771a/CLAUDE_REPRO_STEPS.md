@@ -29,3 +29,12 @@ The measurements used Node.js 22.16.0, Linux 5.15.120 and glibc 2.36. Existing b
 | [Main at the time of PR CI](https://github.com/web-infra-dev/rspack/actions/runs/45554729363/job/139004080299) | `7d34575fb84a3b6491e477380a82cc92dea94488` | `36a8e4a858a4c12e017f382df759bd1baef92ce694960ab1282e4fa676786632` |
 
 The test merge has parents `7d34575fb84a3b6491e477380a82cc92dea94488` and `6f4771a9d6ae6d9247dc59fd1bdbda623121f7f5` (reviewed head), in that order. Its production watcher and native watcher binding sources match the reviewed head. The first parent gives the same control result as the merge base. To repeat that comparison, download run `45554729363` into `main` and run `node verify.mjs main/rspack.linux-x64-gnu.node head/rspack.linux-x64-gnu.node`. [Changes from the first parent](https://github.com/web-infra-dev/rspack/compare/7d34575fb84a3b6491e477380a82cc92dea94488...e7a61c6881a9088df14e743574f946f1df5f7ebe)
+
+## Recheck on `000ba94`
+
+All five reruns produced 0 further predicate calls on the merge base and 8,191 on the revised PR. The independent file's median callback delay was 5 ms on the base and 145 ms on the PR (137–158 ms). The PR CI test merge was `74f93c9141a3046de11c305682029a78276d6539`. Its parents were `f9a8ef34466814e5eae706892701f6c933bd4fe0` and the reviewed head `000ba94522c7bb2f656563d52d8e43af7baa175d`. Repeating against the first parent also produced 0 versus 8,191. [PR binding](https://github.com/web-infra-dev/rspack/actions/runs/45623309153/job/139237156356) · [Current scan loop](https://github.com/web-infra-dev/rspack/blob/000ba94522c7bb2f656563d52d8e43af7baa175d/crates/rspack_watcher/src/paths.rs#L873-L900)
+
+```sh
+gh run download 45623309153 -R web-infra-dev/rspack -n bindings-x86_64-unknown-linux-gnu -D head-000ba94
+node verify.mjs base/rspack.linux-x64-gnu.node head-000ba94/rspack.linux-x64-gnu.node
+```

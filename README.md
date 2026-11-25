@@ -33,6 +33,7 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [26-16844-75cd589](26-16844-75cd589/CLAUDE_REPRO_STEPS.md) | [#16844](https://github.com/web-infra-dev/rspack/pull/16844) | `75cd589` | Unsubscribing a nested context during a subtree scan drops the subtree's entries from a retained outer context. |
 | [27-16844-6f4771a](27-16844-6f4771a/CLAUDE_REPRO_STEPS.md) | [#16844](https://github.com/web-infra-dev/rspack/pull/16844) | `6f4771a` | A metadata event on a directory symlink hides its target's children from the watch snapshot. |
 | [28-16844-6f4771a](28-16844-6f4771a/CLAUDE_REPRO_STEPS.md) | [#16844](https://github.com/web-infra-dev/rspack/pull/16844) | `6f4771a` | Scanning retired siblings delays native notifications for a file that remains watched. |
+| [29-16844-000ba94](29-16844-000ba94/CLAUDE_REPRO_STEPS.md) | [#16844](https://github.com/web-infra-dev/rspack/pull/16844) | `000ba94` | A nested scan reading a second mtime drops the retained outer context's pending file change. |
 
 The two #16770 cases support checking saved evidence with Node.js 22 or newer.
 
