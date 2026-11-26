@@ -38,6 +38,7 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [31-16844-ce42116](31-16844-ce42116/CLAUDE_REPRO_STEPS.md) | [#16844](https://github.com/web-infra-dev/rspack/pull/16844) | `ce42116` | The new watcher test fails to compile under workspace Clippy when comparing an optional borrowed path. |
 | [32-16844-b7c725c](32-16844-b7c725c/CLAUDE_REPRO_STEPS.md) | [#16844](https://github.com/web-infra-dev/rspack/pull/16844) | `b7c725c` | The compiler reports an existing directory as missing after its covering context unsubscribes. |
 | [33-16844-b7c725c](33-16844-b7c725c/CLAUDE_REPRO_STEPS.md) | [#16844](https://github.com/web-infra-dev/rspack/pull/16844) | `b7c725c` | The restored-directory compiler test fails in an isolated process and passes after another watcher learns millisecond precision. |
+| [34-16844-041d879](34-16844-041d879/CLAUDE_REPRO_STEPS.md) | [#16844](https://github.com/web-infra-dev/rspack/pull/16844) | `041d879` | A queued directory removal leaves an explicitly watched child with its old timestamp after the covering context retires. |
 
 The two #16770 cases support checking saved evidence with Node.js 22 or newer.
 
