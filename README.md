@@ -44,6 +44,7 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [37-16899-31d03a0](37-16899-31d03a0/CLAUDE_REPRO_STEPS.md) | [#16899](https://github.com/web-infra-dev/rspack/pull/16899) | `31d03a0` | A long initial directory scan can start another compilation after the updated bundle was already emitted. |
 | [38-16899-31d03a0](38-16899-31d03a0/CLAUDE_REPRO_STEPS.md) | [#16899](https://github.com/web-infra-dev/rspack/pull/16899) | `31d03a0` | A failed native watch registration silences the callback for an independently watched file. |
 | [39-16898-4581466](39-16898-4581466/CLAUDE_REPRO_STEPS.md) | [#16898](https://github.com/web-infra-dev/rspack/pull/16898) | `4581466` | Native-watch timestamp snapshots take longer before an incremental rebuild with thousands of resolver misses. |
+| [40-16906-de0d017](40-16906-de0d017/CLAUDE_REPRO_STEPS.md) | [#16906](https://github.com/web-infra-dev/rspack/pull/16906) | `de0d017` | Stats JSON loses a field added by a plugin that wraps the compilation's factory method. |
 
 The two #16770 cases support checking saved evidence with Node.js 22 or newer.
 
