@@ -40,6 +40,9 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [33-16844-b7c725c](33-16844-b7c725c/CLAUDE_REPRO_STEPS.md) | [#16844](https://github.com/web-infra-dev/rspack/pull/16844) | `b7c725c` | The restored-directory compiler test fails in an isolated process and passes after another watcher learns millisecond precision. |
 | [34-16844-041d879](34-16844-041d879/CLAUDE_REPRO_STEPS.md) | [#16844](https://github.com/web-infra-dev/rspack/pull/16844) | `041d879` | A queued directory removal leaves an explicitly watched child with its old timestamp after the covering context retires. |
 | [35-16844-34426f2](35-16844-34426f2/CLAUDE_REPRO_STEPS.md) | [#16844](https://github.com/web-infra-dev/rspack/pull/16844) | `34426f2` | A moved subtree can leave timestamps for a watched file, a rescanned file, or a retained nested context in the compiler snapshot. |
+| [36-16899-31d03a0](36-16899-31d03a0/CLAUDE_REPRO_STEPS.md) | [#16899](https://github.com/web-infra-dev/rspack/pull/16899) | `31d03a0` | Resuming a native watch repeats the JavaScript ignore check for files already filtered during a rebuild. |
+| [37-16899-31d03a0](37-16899-31d03a0/CLAUDE_REPRO_STEPS.md) | [#16899](https://github.com/web-infra-dev/rspack/pull/16899) | `31d03a0` | A long initial directory scan can start another compilation after the updated bundle was already emitted. |
+| [38-16899-31d03a0](38-16899-31d03a0/CLAUDE_REPRO_STEPS.md) | [#16899](https://github.com/web-infra-dev/rspack/pull/16899) | `31d03a0` | A failed native watch registration silences the callback for an independently watched file. |
 
 The two #16770 cases support checking saved evidence with Node.js 22 or newer.
 
