@@ -46,6 +46,8 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [39-16898-4581466](39-16898-4581466/CLAUDE_REPRO_STEPS.md) | [#16898](https://github.com/web-infra-dev/rspack/pull/16898) | `4581466` | Native-watch timestamp snapshots take longer before an incremental rebuild with thousands of resolver misses. |
 | [40-16906-de0d017](40-16906-de0d017/CLAUDE_REPRO_STEPS.md) | [#16906](https://github.com/web-infra-dev/rspack/pull/16906) | `de0d017` | Stats JSON loses a field added by a plugin that wraps the compilation's factory method. |
 | [41-16891-d0b6cf9](41-16891-d0b6cf9/CLAUDE_REPRO_STEPS.md) | [#16891](https://github.com/web-infra-dev/rspack/pull/16891) | `d0b6cf9` | Loader fallbacks that check the resolver error code stop working when a preferred file is missing. |
+| [42-16917-bfdfaf1](42-16917-bfdfaf1/CLAUDE_REPRO_STEPS.md) | [#16917](https://github.com/web-infra-dev/rspack/pull/16917) | `bfdfaf1` | A change before watch registration can start a rebuild with timestamps missing for existing context files. |
+| [43-16917-bfdfaf1](43-16917-bfdfaf1/CLAUDE_REPRO_STEPS.md) | [#16917](https://github.com/web-infra-dev/rspack/pull/16917) | `bfdfaf1` | An initial scan of a large flat directory takes longer to report a file changed before registration. |
 
 The two #16770 cases support checking saved evidence with Node.js 22 or newer.
 
