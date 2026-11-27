@@ -48,6 +48,7 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [41-16891-d0b6cf9](41-16891-d0b6cf9/CLAUDE_REPRO_STEPS.md) | [#16891](https://github.com/web-infra-dev/rspack/pull/16891) | `d0b6cf9` | Loader fallbacks that check the resolver error code stop working when a preferred file is missing. |
 | [42-16917-bfdfaf1](42-16917-bfdfaf1/CLAUDE_REPRO_STEPS.md) | [#16917](https://github.com/web-infra-dev/rspack/pull/16917) | `bfdfaf1` | A change before watch registration can start a rebuild with timestamps missing for existing context files. |
 | [43-16917-bfdfaf1](43-16917-bfdfaf1/CLAUDE_REPRO_STEPS.md) | [#16917](https://github.com/web-infra-dev/rspack/pull/16917) | `bfdfaf1` | An initial scan of a large flat directory takes longer to report a file changed before registration. |
+| [44-16917-bfdfaf1](44-16917-bfdfaf1/CLAUDE_REPRO_STEPS.md) | [#16917](https://github.com/web-infra-dev/rspack/pull/16917) | `bfdfaf1` | Scanning a moved-in tree bypasses the blocking worker limit used when the same tree is first registered. |
 
 The two #16770 cases support checking saved evidence with Node.js 22 or newer.
 
