@@ -52,6 +52,10 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [45-16920-22ddb87](45-16920-22ddb87/CLAUDE_REPRO_STEPS.md) | [#16920](https://github.com/web-infra-dev/rspack/pull/16920) | `22ddb87` | Withdrawing a missing dependency during a subtree scan leaves its existing file out of the compiler timestamp map. |
 | [46-16920-22ddb87](46-16920-22ddb87/CLAUDE_REPRO_STEPS.md) | [#16920](https://github.com/web-infra-dev/rspack/pull/16920) | `22ddb87` | Directory commits can force a synchronous timestamp query to collect the entire watch registry repeatedly. |
 | [47-16920-22ddb87](47-16920-22ddb87/CLAUDE_REPRO_STEPS.md) | [#16920](https://github.com/web-infra-dev/rspack/pull/16920) | `22ddb87` | Closing a live directory scan runs the JavaScript ignore predicate a second time for every file. |
+| [48-16935-d5a236e](48-16935-d5a236e/CLAUDE_REPRO_STEPS.md) | [#16935](https://github.com/web-infra-dev/rspack/pull/16935) | `d5a236e` | The WASI binding target fails to compile in the watcher path normalizer. |
+| [49-16935-d5a236e](49-16935-d5a236e/CLAUDE_REPRO_STEPS.md) | [#16935](https://github.com/web-infra-dev/rspack/pull/16935) | `d5a236e` | A POSIX context file ending in a literal backslash gets a timestamp under a nonexistent filename. |
+| [50-16935-d5a236e](50-16935-d5a236e/CLAUDE_REPRO_STEPS.md) | [#16935](https://github.com/web-infra-dev/rspack/pull/16935) | `d5a236e` | A missing dependency created as a directory is reported changed but still listed as missing. |
+| [51-16935-d5a236e](51-16935-d5a236e/CLAUDE_REPRO_STEPS.md) | [#16935](https://github.com/web-infra-dev/rspack/pull/16935) | `d5a236e` | Removing an empty nested context registered with a trailing slash adds the deleted child to changedFiles. |
 
 The two #16770 cases support checking saved evidence with Node.js 22 or newer.
 
